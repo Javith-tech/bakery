@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakingo Bakery</title>
+  <link rel="icon" href="img/favicon.ico">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: white;
+    }
+
+
+    header {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      width: 100%;
+      top: 0;
+      
+    }
+    header .parent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .logo img {
+      border: 1px solid white;
+      border-radius: 35px;
+    }
+    .title {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .search-box {
+      flex: 1;
+      max-width: 400px;
+    }
+    .search-box input {
+      width: 100%;
+      height: 40px;
+      padding: 0 10px;
+      border: none;
+      border-radius: 10px;
+    }
+    .menu {
+      display: flex;
+      gap: 15px;
+      white-space: nowrap;
+      flex-wrap: wrap;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .menu a:hover {
+      text-decoration: underline;
+    }
+    .icon {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    
+    .navbar {
+      display: flex;
+      background-color: white;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      height: 50px;
+      box-shadow: 0 2px 10px rgba(201, 185, 185, 0.5);
+      padding: 5px;
+      flex-wrap: wrap;
+      
+    }
+    .navbar .nav a {
+      text-decoration: none;
+      font-weight: bolder;
+      color: black;
+    }
+
+    .section1 {
+      width: 100%;
+      height: 70vh; 
+      background: url("img/2.jpg") center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;     
+      text-align: center;
+      color: white;
+    }
+    .bakery {
+      font-weight: bolder;
+      font-size: 40px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    button {
+      color: black;
+      font-weight: bolder;
+      font-size: 20px;
+      padding: 10px 20px;
+      background-color: beige;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    
+    .card-items {
+      background-color: rgba(118, 96, 96, 0.5);
+      padding: 20px;
+      text-align: center;
+    }
+    .card-items p{
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .card-items h1{
+        color:red;
+    }
+
+    .cards{
+        background-color: blueviolet;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+
+        
+        
+    }
+    .cards .card{
+        background-color: darkgoldenrod;
+        width: 16%;
+        height:350px;
+        border: 1px solid black;
+        margin-top: 10px;
+        text-align: center;
+        border-radius: 15px;
+    }
+    .card img{
+        width: 100%;
+        height: 240px;
+        position: relative;
+        top: 20px;
+        
+        
+        
+    }
+
+    .cards .card p{
+      font-weight:bolder;
+      color: white;
+      align-items: center;
+      padding: 40px;
+      
+    }
+   
+    .section1 h1:hover{
+       color: red;
+        
+    }
+
+    .section1 a:hover{
+        color: black;
+        
+        
+    }
+
+    .menu a:hover{
+      text-decoration: none;
+      
+    }
+
+    footer{
+      background-color: gray;
+      height: 300px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .footer{
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      gap: 60px;
+    }
+
+    .footer1{
+      padding: 20px;
+    }
+
+    .footer a{
+      text-decoration: none;
+      color: white;
+    }
+
+  .footer1 .nav{
+    padding: 20px;
+  }
+  .footer a:hover{
+    color: red;
+    text-decoration: underline;
+  }
+  
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="parent">
+      <div class="icon">
+        <div class="logo">
+          <img src="img/android-chrome-192x192.png" width="70" height="70" alt="logo">
+        </div>
+        <div class="title">Delivering To</div>
+      </div>
+      <div class="search-box">
+        <input type="search" placeholder="Search for cakes, occasion, flavour and more...">
+      </div>
+      <nav class="menu">
+        <a href="#">Track Order</a>
+        <a href="#">Cart</a>
+        <a href="#">Login/Signup</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav>
+    <div class="navbar">
+      <div class="nav"><a href="index.html#body">Cakes</a></div>
+      <div class="nav"><a href="#">Theme Cake</a></div>
+      <div class="nav"><a href="#">By Relationship</a></div>
+      <div class="nav"><a href="#">Dessert</a></div>
+      <div class="nav"><a href="#">Birthday</a></div>
+      <div class="nav"><a href="#">Hampers</a></div>
+      <div class="nav"><a href="#">Anniversary</a></div>
+      <div class="nav"><a href="#">Occasions</a></div>
+      <div class="nav"><a href="#">Customized Cake</a></div>
+    </div>
+  </nav>
+
+  <section class="section1">
+    <h1 class="bakery">Bakingo Bakery</h1>
+    <button><a href="">Order Now</a></button>
+  </section>
+
+  <section class="section2">
+    <div class="card-items">
+      <h1>MENU</h1>
+      <p>What will you wish for?</p>
+    </div>
+  </section>
+
+
+  <section id="body">
+     <div class="cards">
+        <div class="card"><img src="img/1.webp" alt=""><p>Classic Cake</p></div>
+        <div class="card"><img src="img/2.webp" alt=""><p>Birthday Cake</p></div>
+        <div class="card"><img src="img/3.webp" alt=""><p>Plum Cake</p></div>
+    </div>  <div class="cards">
+        <div class="card"><img src="img/4.webp" alt=""><p>Ice Cream</p></div>
+        <div class="card"><img src="img/5.webp" alt=""><p>Almond Cookies</p></div>
+        <div class="card"><img src="img/6.webp" alt=""><p>Biscuits</p></div>
+    </div>  <div class="cards">
+        <div class="card"><img src="img/7.webp" alt=""><p>Dark Chocolate</p></div>
+        <div class="card"><img src="img/8.webp" alt=""><p>Peanut Butter</p></div>
+        <div class="card"><img src="img/9.webp" alt=""><p>Chocholates</p></div>
+    </div>
+    
+  </section>
+
+  <footer>
+
+  
+  <div class="footer">
+
+    <div class="footer1">
+       <div class="nav"><a href="#">Cakes</a></div>
+      <div class="nav"><a href="#">Theme Cake</a></div>
+      <div class="nav"><a href="#">By Relationship</a></div>
+    </div>
+    <div class="footer1">
+        <div class="nav"><a href="#">Dessert</a></div>
+      <div class="nav"><a href="#">Birthday</a></div>
+      <div class="nav"><a href="#">Hampers</a></div>
+    </div>
+    <div class="footer1">
+       <div class="nav"><a href="#">Anniversary</a></div>
+      <div class="nav"><a href="#">Occasions</a></div>
+      <div class="nav"><a href="#">Customized Cake</a></div>
+    </div>
+    
+  </div>
+      </footer>
+
+</body>
+</html>
